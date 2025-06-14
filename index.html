@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendidikan Ilmu Komputer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="container">
+            <a href="#" class="logo">IlmuKomputer.id</a>
+            <nav>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#materi">Materi</a></li>
+                    <li><a href="#kursus">Kursus</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                    <!-- Tombol Login sekarang memicu modal, bukan link halaman -->
+                    <li><a href="#" id="login-btn" class="cta-button" style="padding: 8px 15px; margin-left: 15px;">Login</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Konten Halaman Utama (Semua Section) -->
+        <!-- 1. Beranda -->
+        <section id="beranda" class="hero">
+            <div class="container">
+                <h1>Pendidikan Ilmu Komputer</h1>
+                <p class="deskripsi-singkat">Platform terpadu untuk belajar dasar-dasar ilmu komputer, dari pemrograman hingga kecerdasan buatan, secara gratis dan terstruktur.</p>
+                <a href="#materi" class="cta-button">Mulai Belajar Sekarang</a>
+            </div>
+        </section>
+
+        <!-- 2. Tentang Kami -->
+        <section id="tentang">
+            <div class="container">
+                <h2>Tentang Kami</h2>
+                <div class="tentang-content">
+                    <div><h3>Visi & Misi</h3><p><strong>Visi:</strong> Menjadi sumber utama pendidikan ilmu komputer yang mudah diakses.<br><strong>Misi:</strong> Menyediakan materi pembelajaran berkualitas, terstruktur, dan relevan.</p></div>
+                    <div><h3>Tujuan Platform</h3><p>Tujuan kami adalah mendemokratisasi pendidikan teknologi, memberikan fondasi yang kuat bagi para pembelajar untuk berkarir di dunia digital.</p></div>
+                    <div><h3>Pengembang</h3><p>Platform ini dikembangkan oleh [**Tulis Nama Anda di sini**] sebagai bagian dari proyek Infrastruktur Teknologi Informasi.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Materi Pembelajaran -->
+        <section id="materi">
+            <div class="container">
+                <h2>Materi Pembelajaran</h2>
+                <div class="materi-grid">
+                    <div class="materi-card"><h3>Pemrograman Dasar</h3><p>Python & C++</p></div>
+                    <div class="materi-card"><h3>Struktur Data & Algoritma</h3><p>Efisiensi data.</p></div>
+                    <div class="materi-card"><h3>Jaringan Komputer</h3><p>Dasar internet.</p></div>
+                    <div class="materi-card"><h3>Sistem Operasi</h3><p>Fondasi software.</p></div>
+                    <div class="materi-card"><h3>Keamanan Siber</h3><p>Perlindungan digital.</p></div>
+                    <div class="materi-card"><h3>Kecerdasan Buatan</h3><p>Masa depan teknologi.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Kursus Online / Tutorial -->
+        <section id="kursus">
+            <div class="container">
+                <h2>Kursus Online</h2>
+                <div class="kursus-list">
+                    <div class="kursus-item"><h4>Pengenalan Python</h4><p>Video tutorial lengkap.</p><a href="https://www.youtube.com/watch?v=kqtD5dpn9C8" target="_blank" rel="noopener noreferrer" class="link-materi">Tonton (YouTube)</a></div>
+                    <div class="kursus-item"><h4>Dasar Jaringan</h4><p>Modul PDF ringkas.</p><a href="https://www.itb.ac.id/files/dokumentasi/1232828608-itb-ocw-if2251-sistem-operasi-2008-bab-14-sistem-terdistribusi-jaringan.pdf" target="_blank" rel="noopener noreferrer" class="link-materi">Unduh (ITB)</a></div>
+                    <div class="kursus-item"><h4>HTML & CSS</h4><p>Panduan dari nol.</p><a href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener noreferrer" class="link-materi">Baca (W3Schools)</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Blog / Artikel -->
+        <section id="blog">
+            <div class="container">
+                <h2>Blog & Artikel Terbaru</h2>
+                <div class="blog-grid">
+                    <article class="blog-post"><h3>5 Tren Teknologi 2025</h3><p>Dari AI Generatif hingga komputasi kuantum...</p><a href="#">Baca Selengkapnya</a></article>
+                    <article class="blog-post"><h3>Tips Belajar Coding</h3><p>Cara tetap termotivasi dan konsisten...</p><a href="#">Baca Selengkapnya</a></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Kontak -->
+        <section id="kontak">
+            <div class="container">
+                <h2>Hubungi Kami</h2>
+                <p>Punya pertanyaan atau masukan? Silakan isi formulir di bawah ini.</p>
+                <form class="contact-form" action="#" method="post">
+                    <input type="text" name="nama" placeholder="Nama Anda" required><input type="email" name="email" placeholder="Email Anda" required><textarea name="pesan" rows="5" placeholder="Pesan Anda" required></textarea><button type="submit" class="cta-button">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Email: pendidikan.ilkom@email.com | Social Media: @IlmuKomputerID</p>
+            <p>© 2024 Pendidikan Ilmu Komputer. Dibuat untuk Tugas Infrastruktur Teknologi Informasi.</p>
+        </div>
+    </footer>
+
+    <!-- ======================================= -->
+    <!--     MODAL LOGIN (Awalnya Tersembunyi)     -->
+    <!-- ======================================= -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <!-- Form Login dipindahkan ke sini -->
+            <form id="login-form" class="login-box">
+                <a href="#" class="logo">IlmuKomputer.id</a>
+                <h2>Login Akun</h2>
+                <p>Silakan masuk untuk mengakses materi kursus.</p>
+                <div class="input-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="contoh@email.com" required></div>
+                <div class="input-group"><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Masukkan password" required></div>
+                <button type="submit" class="cta-button">Login</button>
+                <div class="login-footer"><p>Belum punya akun? <a href="#kontak">Daftar di sini</a></p></div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Tombol Back to Top -->
+    <button class="back-to-top" title="Kembali ke atas">↑</button>
+    
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
